@@ -18,7 +18,8 @@ const Footer = () => {
                   collab.
                 </p>
                 </div>
-                <div class="mb-2">
+                
+           <div class="mb-2">
                 <div class="my-2">
                 <p className="main-hero-para text-left text-md font-bold w-100">
                   Project inquiries
@@ -26,10 +27,12 @@ const Footer = () => {
                 </div>
 
                 <div class="mx-2 my-2">
-        <button class="ring-1 ring-gray-600 bg-gray-400 
-                       w-16 h-8 rounded-lg">
-            Phone
-        </button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                  Phone
+                </button>
+                </div>
+
+            
     </div>
     </div>
           <div className="text-right"><a href="/about/">About</a>&nbsp;&nbsp;<a href="/services/">Services</a>&nbsp;&nbsp;<a href="/case study/">Case Study</a>&nbsp;&nbsp;<a href="/team/">Team</a>&nbsp;&nbsp;<a href="/help/">Help</a></div>
@@ -59,7 +62,7 @@ const Footer = () => {
                 </div>
               </div>
             </div> 
-            </div> 
+        
       </footer>
     </>
   );
