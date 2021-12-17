@@ -105,31 +105,34 @@ const Front = () => {
 
     <div class="mb-6">
         <label for="Social Media" class="font-bold mb-3 block text-teal-700">Social Media Handels</label>
-    
-    <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <label class="block text-teal-700 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-youtube">
-        Youtube
-      </label>
+
+
+        <div className="flex flex-wrap w-full">
+  <form class="w-full">
+
+    <div class="grid grid-cols-4 md:grid-cols-8 gap-3 my-3"> 
+       
+    <div class="flex items-center">
+        <label class="text-teal-700 mb-1 md:mb-0 whitespace-nowrap mr-2" for="inline-password">Youtube</label>
+      </div>
+      <div class="flex items-center col-span-3">
+        <input class="bg-gray-200 rounded-md border border-gray-200 p-3 focus:outline-none w-full" id="first-name" type="text" placeholder="  " />
+      </div>
+      
+      </div>
+
+      <div class="grid grid-cols-4 md:grid-cols-8 gap-3 my-6">
+
+      <div class="flex items-center"> 
+        <label class="block text-teal-700 mb-1 md:mb-0 whitespace-nowrap mr-2" for="last-name">Instagram</label>
+      </div>
+      <div class="flex items-center col-span-3">
+        <input class="bg-gray-200 rounded-md border border-gray-200 p-3 focus:outline-none w-full" id="inline-password" type="text" placeholder="Instagram id" />
+      </div>
     </div>
-    <div class="md:w-2/3">
-      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="  ">
-      </input>
-    </div>
-  </div>
-  <div class="md:flex md:items-center mb-6">
-    <div class="md:w-1/3">
-      <label class="block text-teal-700 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-instagram">
-        Instagram
-      </label>
-    </div>
-    <div class="md:w-2/3">
-      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Instagram id">
-      </input>
-    </div>
-  </div>    
-    </div>
-    
+  </form>
+</div>
+
 
     <div class="mb-2">
         <label for="Deliverables" class="font-bold mb-3 block text-teal-700">Deliverables</label>
@@ -165,25 +168,43 @@ const Front = () => {
         </button>
     </div>
 
-    <div class="flex flex-wrap -mx-3 mb-6 my-6">    
-        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-    <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+
+
+    
+      <form action="#" method="POST">
+        
+          <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+              <div class="col-span-6 sm:col-span-3 ">
+      
+             <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
 </svg>
-        <label for="Est Date" class="font-bold mb-3 block text-teal-700">Est Date</label></div>
-        <input type="Date" id="Date" class="bg-gray-200 rounded-md border border-gray-200 p-3 focus:outline-none w-36" placeholder="Date" required/>
-       </div>
+               <label for="Est Date" class="font-bold mb-3 block text-teal-700">Est Date</label></div>
+                <input type="date" name="first_name" id="date" autocomplete="given-name" class="bg-gray-200 rounded-md border border-gray-200 p-3 focus:outline-none w-1/2">
+                </input>
+              </div>
 
-
-        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-    <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="col-span-6 sm:col-span-3">
+              <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>
         <label for="Est Time" class="font-bold mb-3 block text-teal-700">Est Time</label></div>
-        <input type="Time" id="Time" class="bg-gray-200 rounded-md border border-gray-200 p-3 focus:outline-none w-36" placeholder="Time" required/>
-    </div>
-    </div>
-       
+                
+                <input type="time" name="last_name" id="time" autocomplete="family-name" class="bg-gray-200 rounded-md border border-gray-200 p-3 focus:outline-none w-1/2">
+              </input>
+
+              </div>
+              </div >
+
+              </div>
+          
+             
+      
+      </form>
+
+     
         <div class="md:flex md:items-center mb-2">
     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -218,7 +239,7 @@ const Front = () => {
         <button type="Register" class="py-3 px-12 bg-purple-500 hover:bg-teal-600 mr-5 rounded-md my-3 text-gray text-lg focus:outline-none w-18">Register</button>
     </div>
     </div>
-  
+  </div>
   </>
 
 </form>
